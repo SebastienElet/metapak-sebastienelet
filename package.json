@@ -1,0 +1,28 @@
+{
+  "name": "metapak-sebastienelet",
+  "version": "0.0.0",
+  "description": "sebastienelet's metapak configuration",
+  "main": "index.js",
+  "scripts": {
+    "metapak": "metapak || echo 'Please `npm install --save-dev metapak`' && exit 0",
+    "postinstall": "npm run metapak --silent",
+    "test": "mocha src/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastienElet/metapak-sebastienelet.git"
+  },
+  "keywords": [
+    "metapak"
+  ],
+  "author": "Sébastien Elet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SebastienElet/metapak-sebastienelet/issues"
+  },
+  "homepage": "https://github.com/SebastienElet/metapak-sebastienelet#readme",
+  "devDependencies": {
+    "metapak": "0.0.18",
+    "mocha": "3.2.0"
+  }
+}
