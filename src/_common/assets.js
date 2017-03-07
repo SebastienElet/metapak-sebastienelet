@@ -26,7 +26,6 @@ module.exports = (file, packageConf) => {
     for(let i = 0; i <= lastNodeMajorPart - lastNodeLTSMajorPart; i++) {
       if(0 === i) {
         file.data += '  - ' + lastNodeLTSMajorPart + '\n';
-        file.data += '  - ' + config.lastNodeLTS + '\n';
         continue;
       }
       file.data += '  - ' + (lastNodeLTSMajorPart + i) + '\n';

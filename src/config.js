@@ -4,5 +4,5 @@
 // in your metapak module
 module.exports = {
   lastNodeLTS: '6.0.0',
-  lastNode: '7.7.1',
+  lastNode: '7',
 };
