@@ -35,8 +35,8 @@ module.exports = (packageConf) => {
   packageConf.dependencies = packageConf.dependencies || {};
   // Add the MUST HAVE dev dependencies
   packageConf.devDependencies = packageConf.devDependencies || {};
-  packageConf.devDependencies.eslint = '3.16.0';
-  packageConf.devDependencies['eslint-config-simplifield'] = '4.1.1';
+  packageConf.devDependencies.eslint = '3.17.0';
+  packageConf.devDependencies['eslint-config-simplifield'] = '4.4.0';
   packageConf.devDependencies['cz-conventional-changelog'] = '2.0.0';
   packageConf.devDependencies['conventional-changelog-cli'] = '1.2.0';
 

@@ -13,8 +13,8 @@ describe('Package transformer', () => {
         devDependencies: {
           'conventional-changelog-cli': '1.2.0',
           'cz-conventional-changelog': '2.0.0',
-          eslint: '3.16.0',
-          'eslint-config-simplifield': '4.1.1',
+          eslint: '3.17.0',
+          'eslint-config-simplifield': '4.4.0',
         },
         engines: {
           node: '>=6',
