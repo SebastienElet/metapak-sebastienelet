@@ -2,6 +2,9 @@
   "name": "metapak-sebastienelet",
   "version": "0.0.0",
   "description": "sebastienelet's metapak configuration",
+  "metapak": {
+    "configs": [ "readme" ]
+  },
   "main": "index.js",
   "scripts": {
     "metapak": "metapak || echo 'Please `npm install --save-dev metapak`' && exit 0",
@@ -23,6 +26,7 @@
   "homepage": "https://github.com/SebastienElet/metapak-sebastienelet#readme",
   "devDependencies": {
     "metapak": "0.0.18",
-    "mocha": "3.2.0"
+    "mocha": "3.2.0",
+    "sinon": "1.17.7"
   }
 }

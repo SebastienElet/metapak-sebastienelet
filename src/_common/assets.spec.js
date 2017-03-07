@@ -12,7 +12,7 @@ describe('Assets transformer', () => {
       }, {}),
       {
         name: 'LICENSE',
-        data: 'The MIT License (MIT)\nCopyright © 2017 Nicolas Froidure\n',
+        data: 'The MIT License (MIT)\nCopyright © 2017 Sébastien Elet\n',
       }
     );
   });
