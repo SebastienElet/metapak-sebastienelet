@@ -5,13 +5,22 @@
   "metapak": {
     "configs": [
       "readme"
-    ]
+    ],
+    "data": {
+      "testsFiles": "{,!(node_modules)/**/}*.spec.js",
+      "files": "{,!(node_modules)/**/}*.js"
+    }
   },
   "main": "index.js",
   "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "cover": "istanbul cover _mocha --report html -- '{,!(node_modules)/**/}*.spec.js' -R spec -t 5000",
+    "lint": "eslint '{,!(node_modules)/**/}*.js'",
     "metapak": "metapak || echo 'Please `npm install --save-dev metapak`' && exit 0",
     "postinstall": "npm run metapak --silent",
-    "test": "mocha src/**/*.spec.js"
+    "preversion": "npm t && npm run lint",
+    "test": "mocha '{,!(node_modules)/**/}*.spec.js'",
+    "version": "npm run changelog && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
@@ -27,8 +36,16 @@
   },
   "homepage": "https://github.com/SebastienElet/metapak-sebastienelet#readme",
   "devDependencies": {
+    "conventional-changelog-cli": "1.2.0",
+    "cz-conventional-changelog": "2.0.0",
+    "eslint": "3.16.0",
+    "eslint-config-simplifield": "4.1.1",
     "metapak": "0.0.18",
     "mocha": "3.2.0",
     "sinon": "1.17.7"
-  }
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {}
 }
