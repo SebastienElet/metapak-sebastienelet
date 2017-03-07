@@ -2,18 +2,30 @@
 
 const config = require('../config.js');
 
-const GITHUB_REPOSITORY_REGEXP =
-  /git\+https:\/\/github.com\/([a-zA-Z0-9\-]+)\/([a-zA-Z0-9\-]+)\.git/;
+const initData = packageConf => packageConf.metapak && packageConf.metapak.data ?
+  packageConf.metapak.data :
+  {};
+
+const dependencies = (packageConf) => {
+  packageConf.dependencies = packageConf.dependencies || {};
+};
+
+const devDependencies = (packageConf) => {
+  packageConf.devDependencies = packageConf.devDependencies || {};
+  packageConf.devDependencies.eslint = '3.17.0';
+  packageConf.devDependencies['eslint-config-simplifield'] = '4.4.0';
+  packageConf.devDependencies['cz-conventional-changelog'] = '2.0.0';
+  packageConf.devDependencies['conventional-changelog-cli'] = '1.2.0';
+};
+
 
 module.exports = (packageConf) => {
-  const metapakData = packageConf.metapak && packageConf.metapak.data ?
-    packageConf.metapak.data :
-    {};
+  const metapakData = initData(packageConf);
 
   packageConf.author = 'Sébastien Elet';
   packageConf.license = 'MIT';
   packageConf.version = packageConf.version || '0.0.0';
-  packageConf.engines = { node: '>=' + config.lastNodeLTS };
+  packageConf.engines = { node: `>=${config.lastNodeLTS}` };
   packageConf.scripts = packageConf.scripts || {};
   packageConf.scripts.changelog = 'conventional-changelog -p angular -i CHANGELOG.md -s';
   packageConf.scripts.version = 'npm run changelog && git add CHANGELOG.md';
@@ -32,13 +44,10 @@ module.exports = (packageConf) => {
   }
 
   packageConf.scripts.preversion = 'npm t && npm run lint';
-  packageConf.dependencies = packageConf.dependencies || {};
+
+  dependencies(packageConf);
   // Add the MUST HAVE dev dependencies
-  packageConf.devDependencies = packageConf.devDependencies || {};
-  packageConf.devDependencies.eslint = '3.17.0';
-  packageConf.devDependencies['eslint-config-simplifield'] = '4.4.0';
-  packageConf.devDependencies['cz-conventional-changelog'] = '2.0.0';
-  packageConf.devDependencies['conventional-changelog-cli'] = '1.2.0';
+  devDependencies(packageConf);
 
   return packageConf;
 };
