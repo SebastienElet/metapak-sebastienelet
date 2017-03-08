@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('path');
-const USERNAME = 'sebastienelet';
+const USERNAME = 'SebastienElet';
 
 module.exports = (file, packageConf, { PROJECT_DIR, glob, fs, log }) => {
   // Add www to ignored files

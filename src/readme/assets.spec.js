@@ -40,20 +40,20 @@ describe('Assets transformer for www configs', () => {
           '> A great module!\n\n' +
           '[![NPM version](https://badge.fury.io/js/module.svg)]' +
           '(https://npmjs.org/package/module)\n' +
-          '[![Build status](https://secure.travis-ci.org/sebastienelet/module.svg)]' +
-          '(https://travis-ci.org/sebastienelet/module)\n' +
-          '[![Dependency Status](https://david-dm.org/sebastienelet/module.svg)]' +
-          '(https://david-dm.org/sebastienelet/module)\n' +
-          '[![devDependency Status](https://david-dm.org/sebastienelet/module/dev-status.svg)]' +
-          '(https://david-dm.org/sebastienelet/module#info=devDependencies)\n' +
-          '[![Code Climate](https://codeclimate.com/github/sebastienelet/module.svg)]' +
-          '(https://codeclimate.com/github/sebastienelet/module)\n' +
-          '[![Dependency Status](https://dependencyci.com/github/sebastienelet/module/badge)]' +
-          '(https://dependencyci.com/github/sebastienelet/module)\n\n' +
+          '[![Build status](https://secure.travis-ci.org/SebastienElet/module.svg)]' +
+          '(https://travis-ci.org/SebastienElet/module)\n' +
+          '[![Dependency Status](https://david-dm.org/SebastienElet/module.svg)]' +
+          '(https://david-dm.org/SebastienElet/module)\n' +
+          '[![devDependency Status](https://david-dm.org/SebastienElet/module/dev-status.svg)]' +
+          '(https://david-dm.org/SebastienElet/module#info=devDependencies)\n' +
+          '[![Code Climate](https://codeclimate.com/github/SebastienElet/module.svg)]' +
+          '(https://codeclimate.com/github/SebastienElet/module)\n' +
+          '[![Dependency Status](https://dependencyci.com/github/SebastienElet/module/badge)]' +
+          '(https://dependencyci.com/github/SebastienElet/module)\n\n' +
           '## Usage\n' +
           'Just require me\n\n' +
           '# License\n' +
-          '[MIT](https://github.com/sebastienelet/module/blob/master/LICENSE)\n',
+          '[MIT](https://github.com/SebastienElet/module/blob/master/LICENSE)\n',
         }
       );
     })

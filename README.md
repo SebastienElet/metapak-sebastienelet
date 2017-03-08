@@ -7,11 +7,11 @@
 > sebastienelet's metapak configuration
 
 [![NPM version](https://badge.fury.io/js/metapak-sebastienelet.svg)](https://npmjs.org/package/metapak-sebastienelet)
-[![Build status](https://secure.travis-ci.org/sebastienelet/metapak-sebastienelet.svg)](https://travis-ci.org/sebastienelet/metapak-sebastienelet)
-[![Dependency Status](https://david-dm.org/sebastienelet/metapak-sebastienelet.svg)](https://david-dm.org/sebastienelet/metapak-sebastienelet)
-[![devDependency Status](https://david-dm.org/sebastienelet/metapak-sebastienelet/dev-status.svg)](https://david-dm.org/sebastienelet/metapak-sebastienelet#info=devDependencies)
-[![Code Climate](https://codeclimate.com/github/sebastienelet/metapak-sebastienelet.svg)](https://codeclimate.com/github/sebastienelet/metapak-sebastienelet)
-[![Dependency Status](https://dependencyci.com/github/sebastienelet/metapak-sebastienelet/badge)](https://dependencyci.com/github/sebastienelet/metapak-sebastienelet)
+[![Build status](https://secure.travis-ci.org/SebastienElet/metapak-sebastienelet.svg)](https://travis-ci.org/SebastienElet/metapak-sebastienelet)
+[![Dependency Status](https://david-dm.org/SebastienElet/metapak-sebastienelet.svg)](https://david-dm.org/SebastienElet/metapak-sebastienelet)
+[![devDependency Status](https://david-dm.org/SebastienElet/metapak-sebastienelet/dev-status.svg)](https://david-dm.org/SebastienElet/metapak-sebastienelet#info=devDependencies)
+[![Code Climate](https://codeclimate.com/github/SebastienElet/metapak-sebastienelet.svg)](https://codeclimate.com/github/SebastienElet/metapak-sebastienelet)
+[![Dependency Status](https://dependencyci.com/github/SebastienElet/metapak-sebastienelet/badge)](https://dependencyci.com/github/SebastienElet/metapak-sebastienelet)
 
 This is a [`metapak`](https://github.com/sebastienelet/metapak) module,
  it is intended to apply projects configuration automagically.
@@ -23,4 +23,4 @@ npm install --save-dev metapak metapak-sebastienelet
 ```
 
 # License
-[MIT](https://github.com/sebastienelet/metapak-sebastienelet/blob/master/LICENSE)
+[MIT](https://github.com/SebastienElet/metapak-sebastienelet/blob/master/LICENSE)
