@@ -12,10 +12,10 @@ const dependencies = (packageConf) => {
 
 const devDependencies = (packageConf) => {
   packageConf.devDependencies = packageConf.devDependencies || {};
-  packageConf.devDependencies.eslint = '3.17.0';
-  packageConf.devDependencies['eslint-config-simplifield'] = '4.4.0';
+  packageConf.devDependencies.eslint = '3.19.0';
+  packageConf.devDependencies['eslint-config-simplifield'] = '5.0.1';
   packageConf.devDependencies['cz-conventional-changelog'] = '2.0.0';
-  packageConf.devDependencies['conventional-changelog-cli'] = '1.2.0';
+  packageConf.devDependencies['conventional-changelog-cli'] = '1.3.1';
 };
 
 
