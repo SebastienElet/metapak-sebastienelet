@@ -11,10 +11,10 @@ describe('Package transformer', () => {
         author: 'Sébastien Elet',
         dependencies: {},
         devDependencies: {
-          'conventional-changelog-cli': '1.2.0',
+          'conventional-changelog-cli': '1.3.1',
           'cz-conventional-changelog': '2.0.0',
-          eslint: '3.17.0',
-          'eslint-config-simplifield': '4.4.0',
+          eslint: '3.19.0',
+          'eslint-config-simplifield': '5.0.1',
         },
         engines: {
           node: '>=6',
