@@ -1,6 +1,6 @@
 {
   "name": "metapak-sebastienelet",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "sebastienelet's metapak configuration",
   "metapak": {
     "configs": [
